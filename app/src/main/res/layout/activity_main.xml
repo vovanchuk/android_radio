@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Układ Name-->
+    <TextView
+        android:id="@+id/idName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/idLastName"
+        app:layout_constraintEnd_toStartOf="@+id/idPlainName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textAverage"
+        android:layout_width="277dp"
+        android:layout_height="20dp"
+        android:text="@string/stringAvarage"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/idOcenyButtonAccept"
+        app:layout_constraintEnd_toStartOf="@+id/idCountMarks"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="@+id/idPlainLastName" />
+
+    <EditText
+        android:id="@+id/idPlainName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idName"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Układ LastName-->
+    <TextView
+        android:id="@+id/idLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/last_name"
+        app:layout_constraintBottom_toTopOf="@+id/idCountMarks"
+        app:layout_constraintEnd_toStartOf="@+id/idPlainLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idPlainLastName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/idPlainLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:ems="10"
+        android:hint="@string/hint_last_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idLastName"
+        app:layout_constraintTop_toBottomOf="@+id/idPlainName" />
+    <!-- Układ CountMarks-->
+    <TextView
+        android:id="@+id/idCountMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/marks"
+        app:layout_constraintEnd_toStartOf="@+id/idPlainCountMarks"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPlainLastName" />
+
+    <EditText
+        android:id="@+id/idPlainCountMarks"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:ems="10"
+        android:hint="@string/hint_marks"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idCountMarks"
+        app:layout_constraintTop_toBottomOf="@+id/idPlainLastName" />
+    <!-- Układ Button-->
+    <Button
+        android:id="@+id/idOcenyButtonAccept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/button_oceny"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPlainCountMarks" />
+
+    <Button
+        android:id="@+id/idButtonSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text=""
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPlainCountMarks" />
+    <!--94: android:inputType="number" zmienia klawiature na cyfry -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

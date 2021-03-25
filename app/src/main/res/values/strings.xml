@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">lab3-GUI</string>
+
+    <string name="name">Imię: </string>
+    <string name="hint_name">Wpisz imię</string>
+    <string name="last_name">Nazwisko: </string>
+    <string name="hint_last_name">Wpisz nazwisko</string>
+    <string name="marks">Liczba ocen: </string>
+    <string name="hint_marks">Wpisz liczbę ocen</string>
+
+    <string name="button_oceny">Oceny</string>
+
+    <string name="error_name">Imię nie może być puste</string>
+    <string name="error_name_symbols">Imię nie może zawierać cyfr,znaków specjalnych</string>
+    <string name="error_last_name_symbols">Nazwisko nie może zawierać cyfr,znaków specjalnych</string>
+    <string name="error_last_name">Nazwisko nie może być puste</string>
+    <string name="error_marks_boards">Wpisz liczbę ocen od 5 do 15</string>
+    <string name="error_marks_empty">Ocena nie może być pusta</string>
+    <string name="oblicz_srednia">OBLICZ SREDNIĄ</string>
+
+    <string name="mark_2">2</string>
+    <string name="mark_3">3</string>
+    <string name="mark_4">4</string>
+    <string name="mark_5">5</string>
+    <string name="calculate_avarage">Oblicz średnią</string>
+    <string name="stringAvarage">Twoja średnią to</string>
+
+    <string-array name="SubjectName">
+        <item>Inżynieria systemów mobilnych</item>
+        <item>Modelowanie i symulacja komputerowa</item>
+        <item>Programowanie równolegle i rozproszone</item>
+        <item>Paradygmaty programowania</item>
+        <item>Inżynieria systemów baz danych</item>
+        <item>Projekt zepołowy</item>
+        <item>Sieci rozproszone</item>
+        <item>Tworzenie aplikacji internetowych</item>
+        <item>Technika mikroprocesorowa</item>
+        <item>Bezpieczeństwo systemów informatycznych</item>
+        <item>Elektronika</item>
+        <item>Grafika komputerowa</item>
+        <item>Technika cyfrowa</item>
+        <item>Programowanie systemowe</item>
+        <item>Język Java</item>
+    </string-array>
+
+    <string name="gratulacja">Gratulacja! :)</string>
+    <string name="gratulacjaMinus">Tym razem mi nie poszło</string>
+    <string name="podanieWarunkowe">Wysyłam podanie o zaliczenie warunkowe</string>
+    <string name="gratulacjaEnd">Gratulacje! Otrzymujesz zaliczenie!</string>
+</resources>
